@@ -1,0 +1,9 @@
+[submodule "Markov-Bot"]
+	path = Markov-Bot
+	url = https://github.com/jenningsje/Markov-Bot
+[submodule "MarkovDocker5"]
+	path = MarkovDocker5
+	url = https://github.com/jenningsje/MarkovDocker5
+[submodule "Download"]
+	path = Download
+	url = https://github.com/jenningsje/Download
