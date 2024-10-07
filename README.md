@@ -7,12 +7,12 @@ a protein responsible for a disease etc. The Markov Viewer can be used to have a
 Installing the MarkovEklypse:
 You will need git installed on azure for this.
 First clone the repository with the following command:
-git clone https://github.com/jenningsje/MarkovEklypse
+1. git clone https://github.com/jenningsje/MarkovEklypse
 
 Installing the submodules:
-git clone --recurse-submodules https://github.com/jenningsje/MarkovDocker5
-git clone --recursive-submodules https://github.com/jenningsje/Markov-Bot
-git clone --recursive-submodules https://github.com/jenningsje/Download
+1. git clone --recurse-submodules https://github.com/jenningsje/MarkovDocker5
+2. git clone --recursive-submodules https://github.com/jenningsje/Markov-Bot
+2. git clone --recursive-submodules https://github.com/jenningsje/Download
 
 Dockerizing the image for the ChatBot (a.k.a. MarkovBot):
 1. To Dockerize the ChatBot navigate to ./MarkovBot/docker-app relative to this respository and run the following commands:
