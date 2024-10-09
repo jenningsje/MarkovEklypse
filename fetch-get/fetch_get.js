@@ -9,4 +9,3 @@ function fetch_get() {
     xhttp.open("GET", "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi", true);
     xhttp.send();
 }
-export { fetch_get };
