@@ -5,5 +5,5 @@ xhttp.onreadystatechange = function() {
        document.getElementById("demo").innerHTML = xhttp.responseText;
     }
 };
-xhttp.open("GET", "filename", true);
+xhttp.open("GET", "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi", true);
 xhttp.send();
