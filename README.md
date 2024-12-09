@@ -11,8 +11,8 @@ First clone the repository with the following command:
 
 Installing the submodules:
 1. git clone --recurse-submodules https://github.com/jenningsje/MarkovDocker5
-2. git clone --recursive-submodules https://github.com/jenningsje/Markov-Bot
-2. git clone --recursive-submodules https://github.com/jenningsje/Download
+2. git clone --recurse-submodules https://github.com/jenningsje/Markov-Bot
+2. git clone --recurse-submodules https://github.com/jenningsje/Download
 
 Dockerizing the image for the ChatBot (a.k.a. MarkovBot):
 1. To Dockerize the ChatBot navigate to ./MarkovBot/docker-app relative to this respository and run the following commands:
