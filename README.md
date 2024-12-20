@@ -1,3 +1,4 @@
+## Markov Eklypse
 The Markov Eklypse performs protein-protein docking simulations with 96.63% accuracy. The ChatGPT clone is trained on the NIH database and outsources the proprietary Integral-SEQ logo from outside of its 
 main directory along with the proprietary node module used to access the NIH database.
 The Docking Simulator contains instructions for how it is to be used and access the AlphaFold and Protein Databanks. When the Simulator is finished the pdb file is automatically downloaded into the
@@ -23,12 +24,23 @@ First clone the repository with the following command:
 ## Dockerizing the image for the Docking Simulator (a.k.a. MarkovDocker):
 1. Navigate to MarkovDocker
 2. Run the following commands
-3. docker-compose build
-4. docker-compose up
+4. chmod u+x allow_permissions.sh (allows permissions for all bash scripts)
+5. ./activate_permissions.sh
+6. ./build_Markov.sh
 
 ## access the app
 1. access the Simulator on the following link: localhost:3000
 2. access the ChatBot at localhost:8889
+3. access the Download Page at localhost:3001
+4. access the Markov Viewer: localhost:4000
+
+## troubleshooting:
+2. builds the Markov Eklypse and all of its components: build_Markov.sh, run ./build_Markov.sh
+3. allow permissions for html files on the frontend: activate_html.sh, run ./activate_html.sh
+4. reboot the Markov Eklypse: reboot_Markov.sh, run ./rebott_Markov.sh
+5. reboot nginx server: reboot_html.sh, run ./reboot_html.sh
+6. in case the ssh server was not successful upon running ./build_Markov.sh: ssh_connect.sh, run ./ssh_connect.sh
+7. in case the ssh server is experiencing issues: inside_ssh_server.sh, run ./inside_ssh_server.sh
 
 Software Requirments:
 GNU/Linux, Microsoft Azure or MacOSX
