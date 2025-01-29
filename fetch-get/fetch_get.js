@@ -1,4 +1,4 @@
-function fetch_get() {
+async function fetchGet() {
     const apiUrls = [
         "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi", // medical papers
         "http://export.arxiv.org/api/query?search_query=all:electron", // physics papers
@@ -9,22 +9,23 @@ function fetch_get() {
         "https://api.osf.io/v2/"
     ];
 
-    apiUrls.forEach(url => {
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-            if (this.readyState == 4) {
-                if (this.status == 200) {
-                    // Action to be performed when the document is ready
-                    console.log(`Data fetched successfully from ${url}`);
-                    // You can handle each API's response here as needed, for example:
-                    document.getElementById("demo").innerHTML += xhttp.responseText + "<br><br>";
-                } else {
-                    // Trigger error if the request fails
-                    console.error(`Error fetching data from ${url}. Status: ${this.status}`);
-                }
+    const resultsContainer = document.getElementById("demo");
+    resultsContainer.innerHTML = ""; // Clear previous results if any
+
+    for (const url of apiUrls) {
+        try {
+            const response = await fetch(url);
+            if (response.ok) {
+                const data = await response.text(); // Use `response.json()` for JSON APIs
+                console.log(`Data fetched successfully from ${url}`);
+                resultsContainer.innerHTML += `<p><strong>${url}</strong>:<br>${data}</p>`;
+            } else {
+                console.error(`Error fetching data from ${url}. Status: ${response.status}`);
+                resultsContainer.innerHTML += `<p><strong>${url}</strong>: Error ${response.status}</p>`;
             }
-        };
-        xhttp.open("GET", url, true);
-        xhttp.send();
-    });
+        } catch (error) {
+            console.error(`Error fetching data from ${url}:`, error);
+            resultsContainer.innerHTML += `<p><strong>${url}</strong>: Fetch error</p>`;
+        }
+    }
 }
