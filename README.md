@@ -32,7 +32,7 @@ First clone the repository with the following command:
 1. access the Simulator on the following link: localhost:3000
 2. access the ChatBot at localhost:8889
 3. access the Download Page at localhost:3001
-4. access the Markov Viewer: localhost:4000
+4. access the Markov Viewer: https://vercel.com/jenningsjes-projects/markov-viewer/28GUC7E91qMJ5qU3ZwJU5jFjyZna
 
 ## troubleshooting:
 2. builds the Markov Eklypse and all of its components: build_Markov.sh, run ./build_Markov.sh
