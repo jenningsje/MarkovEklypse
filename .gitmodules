@@ -7,3 +7,6 @@
 [submodule "Download"]
 	path = Download
 	url = https://github.com/jenningsje/Download
+[submodule "fetch-get"]
+	path = fetch-get
+	url = https://github.com/jenningsje/fetch-get
