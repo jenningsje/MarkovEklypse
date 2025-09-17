@@ -10,3 +10,9 @@
 [submodule "fetch-get"]
 	path = fetch-get
 	url = https://github.com/jenningsje/fetch-get
+[submodule "MarkovASI"]
+	path = MarkovASI
+	url = https://github.com/jenningsje/MarkovASI
+[submodule "spiderfoot"]
+	path = spiderfoot
+	url = https://github.com/jenningsje/spiderfoot
