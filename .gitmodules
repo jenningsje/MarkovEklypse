@@ -16,3 +16,6 @@
 [submodule "spiderfoot"]
 	path = spiderfoot
 	url = https://github.com/jenningsje/spiderfoot
+[submodule "Paywall"]
+	path = Paywall
+	url = https://github.com/jenningsje/MarkovPaywall
