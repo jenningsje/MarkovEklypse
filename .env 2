@@ -1,0 +1,5 @@
+MARKOV_HOME=/opt/app/MarkovProprietary/pipelinestages
+LIGHTDOCK_HOME=/opt/app/lightdock
+GEMMI_HOME=/opt/app/gemmi
+PYTHONPATH=/opt/app/lightdock:/opt/app/MarkovProprietary/pipelinestages:/opt/app/gemmi
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/app/lightdock/bin:/opt/app/MarkovProprietary/pipelinestages/bin:/opt/app/gemmi/bin
