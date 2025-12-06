@@ -6,7 +6,7 @@
 	url = https://github.com/jenningsje/MarkovDocker5
 [submodule "Download"]
 	path = Download
-	url = https://github.com/jenningsje/Download
+	url = https://github.com/jenningsje/MarkovDocker5
 [submodule "fetch-get"]
 	path = fetch-get
 	url = https://github.com/jenningsje/fetch-get
@@ -19,3 +19,6 @@
 [submodule "Paywall"]
 	path = Paywall
 	url = https://github.com/jenningsje/MarkovPaywall
+[submodule "huginn"]
+	path = huginn
+	url = https://github.com/huginn/huginn
