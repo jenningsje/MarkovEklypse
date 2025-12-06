@@ -19,3 +19,6 @@
 [submodule "Paywall"]
 	path = Paywall
 	url = https://github.com/jenningsje/MarkovPaywall
+[submodule "huginn"]
+	path = huginn
+	url = https://github.com/huginn/huginn
