@@ -22,3 +22,6 @@
 [submodule "external/react-login-form"]
 	path = external/react-login-form
 	url = https://github.com/jenningsje/react-login-form
+[submodule "react-login-form"]
+	path = react-login-form
+	url = https://github.com/jenningsje/react-login-form
