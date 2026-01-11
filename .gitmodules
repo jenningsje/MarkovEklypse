@@ -25,3 +25,9 @@
 [submodule "react-login-form"]
 	path = react-login-form
 	url = https://github.com/jenningsje/react-login-form
+[submodule "Markov-Viewer"]
+	path = Markov-Viewer
+	url = https://github.com/jenningsje/Markov-Viewer
+[submodule "saas-starter"]
+	path = saas-starter
+	url = https://github.com/jenningsje/Markov-Viewer
