@@ -13,8 +13,7 @@ First clone the repository with the following command:
 ## Installing the submodules:
 1. git clone --recurse-submodules https://github.com/jenningsje/MarkovDocker5
 2. git clone --recurse-submodules https://github.com/jenningsje/MarkovASI
-3. git clone --recurse-submodules https://github.com/jenningsje/react-login-form
-4. git clone --recurse-submodules https://github.com/jenningsje/fetch-get
+3. git clone --recurse-submodules https://github.com/jenningsje/Markov-Viewer
 
 ## Dockerizing the image for the ChatBot (a.k.a. MarkovBot):
 
