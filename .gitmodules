@@ -31,3 +31,6 @@
 [submodule "saas-starter"]
 	path = saas-starter
 	url = https://github.com/jenningsje/Markov-Viewer
+[submodule "login"]
+	path = login
+	url = https://github.com/jenningsje/login
