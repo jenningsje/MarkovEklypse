@@ -1,0 +1,24 @@
+FROM alpine:latest
+
+RUN apk update && apk add --no-cache \
+    openssh \
+    bash \
+    sshfs \
+    iputils
+
+# Add user and set passwords
+RUN adduser -D -s /bin/bash test \
+    && echo 'root:testpass' | chpasswd \
+    && echo 'test:testpass' | chpasswd
+
+# SSH login fix
+RUN sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config \
+    && sed -i 's/#PasswordAuthentication yes/PasswordAuthentication yes/' /etc/ssh/sshd_config
+
+# Generate SSH host keys
+RUN ssh-keygen -A
+
+# Expose SSH port
+EXPOSE 22
+
+CMD ["/usr/sbin/sshd", "-D"]

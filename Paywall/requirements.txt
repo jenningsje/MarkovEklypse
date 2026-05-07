@@ -1,0 +1,10 @@
+bash
+curl
+wget
+ca-certificates
+nodejs
+yarn
+build-base
+musl-dev
+libffi-dev 
+openssl-dev

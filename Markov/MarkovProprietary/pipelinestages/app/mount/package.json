@@ -1,0 +1,15 @@
+{
+  "name": "server-one",
+  "version": "1.0.0",
+  "description": "writes user queries to names.txt",
+  "main": "index.js",
+  "author": "James Jennings jjennings@integral-seq.com",
+  "license": "no",
+  "private": true,
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
+    "nodemon": "^3.1.4"
+  }
+}
